@@ -5,13 +5,13 @@
 #include "Circle.h"
 
 double Circle::get_area() {
-    return PI * radius * radius;
+  return PI * radius_ * radius_;
 }
 
 Rectangle_s Circle::get_frame_rect() {
-    return Rectangle_s(center , radius * 2 , radius * 2);
+  return Rectangle_s(center_, radius_ * 2, radius_ * 2);
 }
 
 void Circle::move(Point point) {
-    center = Point(center.x + point.x , center.y+point.y);
+  center_ = Point(center_.x_ + point.x_, center_.y_ + point.y_);
 }

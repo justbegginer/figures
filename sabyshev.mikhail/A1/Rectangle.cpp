@@ -3,14 +3,14 @@
 //
 
 #include "Rectangle.h"
-double Rectangle::get_area() {
-    return width * height;
-}
 
+double Rectangle::get_area() {
+  return width_ * height_;
+}
 Rectangle_s Rectangle::get_frame_rect() {
-    return Rectangle_s(center ,width , height);
+  return {center_, width_, height_};
 }
 
 void Rectangle::move(Point point) {
-    center = Point(center.x + point.x , center.y + point.y);
+  center_ = Point(center_.x_ + point.x_, center_.y_ + point.y_);
 }
