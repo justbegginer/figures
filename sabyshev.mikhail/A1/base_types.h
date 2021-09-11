@@ -5,7 +5,7 @@
 #ifndef FIGURES_BASE_TYPES_H
 #define FIGURES_BASE_TYPES_H
 
-#endif //FIGURES_BASE_TYPES_H
+ //FIGURES_BASE_TYPES_H
 
 struct Point {
   double x_;
@@ -20,3 +20,5 @@ struct Rectangle_s { Point center_;
 
   Rectangle_s(Point center, double width, double height) : center_(center), width_(width), height_(height) {}
 };
+
+#endif

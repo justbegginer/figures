@@ -5,7 +5,6 @@
 #ifndef FIGURES_SHAPE_H
 #define FIGURES_SHAPE_H
 
-#endif //FIGURES_SHAPE_H
 #include "base_types.h"
 
 class Shape {
@@ -16,3 +15,4 @@ class Shape {
   virtual void move(Point point) {}
 };
 
+#endif

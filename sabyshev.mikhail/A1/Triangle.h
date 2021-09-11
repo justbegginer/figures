@@ -20,10 +20,11 @@ public:
   void move(Point point) override;
 
 private:
-  Point points_[3] = {Point(0, 0), Point(0, 0), Point(0, 0)};
+  Point points_[3]= {Point(0, 0), Point(0, 0), Point(0, 0)};
   Point center_ = Point(0, 0);
 
   void build_center_();
 };
+//
 
 #endif //LABA3_TRIANGLE_H
